@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  flex-direction: column;
+  margin: 0;
+  background-image: url(space.webp);
+  background-size: center;
+  color:white;
+}
+
+@font-face {
+  font-family: star-wars;
+  src: url(Starjedi.ttf);
+}
+
+#BACK,
+#NEXT {
+  margin-right: 5px;
+  cursor: pointer;
+  color: rgb(163, 138, 28);
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+  font-family: consolas;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s linear;
+}
+#BACK:hover,#NEXT:hover{
+  background-color: rgb(15, 15, 15);
+}
+
+#NAME,
+#DETAIL,
+#WORLD {
+  transition: 1s linear;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 25px;
+    color: rgb(179, 176, 43);
+    font-family: star-wars;
+    border-bottom: 1px solid rgb(126, 114, 46);
+    text-align: center;
+    padding: 10px;
+    text-transform: lowercase;
+  }
+  p {
+    font-size: 18px;
+    font-family: consolas;
+  }
+  b {
+    color:rgb(94, 85, 60);
+    font-size:18px;
+    text-transform: uppercase;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5px;
+    width: 15vw;
+    word-wrap: break-word;
+  }
+}
+
+#NAME article:hover {
+  cursor: pointer;
+  background-color: rgb(12, 13, 0);
+}
+
+header {
+  background-image: url(sw-banner.webp);
+  width: 100vw;
+  height: 250px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
